@@ -3,10 +3,10 @@ Type: Package
 Title: RRest
 Version: 0.1.0
 Author: Kacper Korzeniewski
-Maintainer: The package maintainer kacper.korzeniewski.plock@gmail.com
-Description: Algorithm for estimation of respiratory rate from the 
-photoplethysmogram.
-License: Open-source
+Maintainer: The package maintainer <kacper.korzeniewski.plock@gmail.com>
+Description: Algorithm for estimation of respiratory rate from the photoplethysmogram.
+License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
-
+Imports: stringi, gsignal, ggplot2, pracma, utils, stats
+RoxygenNote: 7.3.1
