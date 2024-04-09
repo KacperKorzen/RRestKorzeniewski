@@ -23,14 +23,14 @@ signal = RRestKorzeniewski::loadPPG("rrest-syn069_data.csv", path = '/Users/korz
 
 ## Test
 ```{r calulate, echo = TRUE, message=FALSE, warning=FALSE}
-respiration = ppgToResp(signal, 500);
+respiration = RRestKorzeniewski::ppgToResp(signal, 500);
 respiration$graph
 
 ```
 
 ## Test
 ```{r RRV, echo = TRUE, message=FALSE, warning=FALSE}
-respiration2 = calculateRespFeatures(resp = respiration)
+respiration2 = RRestKorzeniewski::calculateRespFeatures(resp = respiration)
 respiration2$graph
 cat('mRR: ', respiration2$mRR)
 cat('stdRR: ', respiration2$stdRR)

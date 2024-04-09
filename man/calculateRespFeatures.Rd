@@ -36,10 +36,10 @@ Function calculate the time domain parameters of RRV respiratory signal from a
 respiration curve.
 }
 \examples{
-          calculateRespFeatures(resp = respObject);
-          calculateRespFeatures(resp = respObject, mRR_bool = TRUE, stdRR_bool = FALSE, RMSSD_bool = TRUE);
-          calculateRespFeatures(resp = respObject, mRR_bool = FALSE, stdRR_bool = TRUE, RMSSD_bool = TRUE);
-          calculateRespFeatures(resp = respObject, mRR_bool = FALSE, stdRR_bool = FALSE, RMSSD_bool = TRUE);
-          calculateRespFeatures(resp = respObject, mRR_bool = TRUE, stdRR_bool = FALSE, RMSSD_bool = FALSE);
+calculateRespFeatures(resp = respObject);
+calculateRespFeatures(resp = respObject, mRR_bool = TRUE, stdRR_bool = FALSE, RMSSD_bool = TRUE);
+calculateRespFeatures(resp = respObject, mRR_bool = FALSE, stdRR_bool = TRUE, RMSSD_bool = TRUE);
+calculateRespFeatures(resp = respObject, mRR_bool = FALSE, stdRR_bool = FALSE, RMSSD_bool = TRUE);
+calculateRespFeatures(resp = respObject, mRR_bool = TRUE, stdRR_bool = FALSE, RMSSD_bool = FALSE);
 
 }
