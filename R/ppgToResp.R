@@ -17,6 +17,7 @@
 #'           ppgToResp(raw_ppg = ppg_signal, sample_rate = 500);
 #'           ppgToResp(raw_ppg = ppg_signal, sample_rate = 500, normalise_resp = FALSE);
 #'
+#' @export
 ppgToResp <- function(raw_ppg, sample_rate, normalise_resp = TRUE){
   # input checking
   stopifnot(is.numeric(raw_ppg))
