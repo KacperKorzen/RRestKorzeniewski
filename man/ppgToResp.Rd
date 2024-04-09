@@ -19,12 +19,13 @@ A S3 class "Signal" object which containing information about a signal.
         The "signal" attribute holds the actual signal value, while "time" denotes the time.
         "signal_type" identifies the type of the signal. Lastly, the "graph" attribute contains
         a graphical representation of the signal.
-
- @examples
-          ppgToResp(raw_ppg = ppg_signal, sample_rate = 500);
-          ppgToResp(raw_ppg = ppg_signal, sample_rate = 500, normalise_resp = FALSE);
 }
 \description{
 Function estimating the respiratory signal from a photoplethysmographic (PPG)
 curve using FM modulation
+}
+\examples{
+          ppgToResp(raw_ppg = ppg_signal, sample_rate = 500);
+          ppgToResp(raw_ppg = ppg_signal, sample_rate = 500, normalise_resp = FALSE);
+
 }

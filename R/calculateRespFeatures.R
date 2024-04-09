@@ -14,14 +14,15 @@
 #'         and RMSSD atribute which contains information about root mean square of
 #'         the differences between the durations of adjacent breaths.
 #'
-#'  @examples
+#' @examples
 #'           calculateRespFeatures(resp = respObject);
 #'           calculateRespFeatures(resp = respObject, mRR_bool = TRUE, stdRR_bool = FALSE, RMSSD_bool = TRUE);
 #'           calculateRespFeatures(resp = respObject, mRR_bool = FALSE, stdRR_bool = TRUE, RMSSD_bool = TRUE);
 #'           calculateRespFeatures(resp = respObject, mRR_bool = FALSE, stdRR_bool = FALSE, RMSSD_bool = TRUE);
 #'           calculateRespFeatures(resp = respObject, mRR_bool = TRUE, stdRR_bool = FALSE, RMSSD_bool = FALSE);
 #'
-#'  @export calculateRespFeatures
+#' @export calculateRespFeatures
+
 calculateRespFeatures <- function(resp, mRR_bool = TRUE, stdRR_bool = TRUE, RMSSD_bool = TRUE){
   # input checking
   stopifnot(class(resp) == "Signal");

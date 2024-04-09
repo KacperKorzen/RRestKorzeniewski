@@ -13,7 +13,7 @@
 #'         "signal_type" identifies the type of the signal. Lastly, the "graph" attribute contains
 #'         a graphical representation of the signal.
 #'
-#'  @examples
+#' @examples
 #'           ppgToResp(raw_ppg = ppg_signal, sample_rate = 500);
 #'           ppgToResp(raw_ppg = ppg_signal, sample_rate = 500, normalise_resp = FALSE);
 #'
