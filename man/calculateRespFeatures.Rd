@@ -37,7 +37,7 @@ A S3 class "Signal" object which containing information about a signal
           calculateRespFeatures(resp = respObject, mRR_bool = FALSE, stdRR_bool = FALSE, RMSSD_bool = TRUE);
           calculateRespFeatures(resp = respObject, mRR_bool = TRUE, stdRR_bool = FALSE, RMSSD_bool = FALSE);
 
- @export
+ @export calculateRespFeatures
 }
 \description{
 Calculate RRV parameters of the Respiration Signal

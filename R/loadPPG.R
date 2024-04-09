@@ -9,7 +9,7 @@
 #'
 #' @return A numeric vector contains the PPG signal
 #'
-#' @export
+#' @export loadPPG
 
 loadPPG <- function(file_name, path = './', first_sample = 0, last_sample = 1000){
   # input checking

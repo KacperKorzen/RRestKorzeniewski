@@ -21,7 +21,7 @@
 #'           calculateRespFeatures(resp = respObject, mRR_bool = FALSE, stdRR_bool = FALSE, RMSSD_bool = TRUE);
 #'           calculateRespFeatures(resp = respObject, mRR_bool = TRUE, stdRR_bool = FALSE, RMSSD_bool = FALSE);
 #'
-#'  @export
+#'  @export calculateRespFeatures
 calculateRespFeatures <- function(resp, mRR_bool = TRUE, stdRR_bool = TRUE, RMSSD_bool = TRUE){
   # input checking
   stopifnot(class(resp) == "Signal");
