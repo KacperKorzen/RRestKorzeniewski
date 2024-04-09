@@ -1,6 +1,6 @@
 #' Loading the Respiration Signal
 #'
-#' Function to load photoplethysmographic (PPG) signal
+#' Function to load photoplethysmographic (PPG) signal.
 #'
 #' @param file_name A .csv file with PPG signal
 #' @param path Signal sampling rate.
@@ -9,10 +9,7 @@
 #'
 #' @return A numeric vector contains the PPG signal
 #'
-#' @examples
-#' loadPPG(file_name = 'ppg_signal.csv');
-#' loadPPG(file_name = 'ppg_signal.csv', first_sample=200, last_sample=5000);
-#'
+
 
 loadPPG <- function(file_name, path = './', first_sample = 0, last_sample = 1000){
   # input checking

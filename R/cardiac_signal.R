@@ -8,6 +8,6 @@
 #' second is the ECG signal
 #' @keywords datasets PPG ECG
 #' @examples
-#' data(cardaic_signal)
-#' plot(cardaic_signal$V1)
+#' data(cardiac_signal)
+#' plot(cardiac_signal$V1)
 "cardiac_signal"

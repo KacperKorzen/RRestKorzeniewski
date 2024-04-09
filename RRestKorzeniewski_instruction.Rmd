@@ -1,0 +1,38 @@
+---
+title: "Instruction for RRestKorzeniewski"
+output:
+  html_document: default
+date: "2024-04-08"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, warning = FALSE)
+```
+
+#Install packages
+```{r install, echo = TRUE, message=FALSE, warning=FALSE}
+devtools::install_github(repo = "KacperKorzen/RRestKorzeniewski")
+```
+
+
+## Test
+```{r load, echo = TRUE, message=FALSE, warning=FALSE}
+signal = RRestKorzeniewski::loadPPG("rrest-syn069_data.csv", path = '/Users/korzeniewski/Desktop/PRO/project1/', first_sample = 500, last_sample = 10800)
+
+```
+
+## Test
+```{r calulate, echo = TRUE, message=FALSE, warning=FALSE}
+respiration = ppgToResp(signal, 500);
+respiration$graph
+
+```
+
+## Test
+```{r RRV, echo = TRUE, message=FALSE, warning=FALSE}
+respiration2 = calculateRespFeatures(resp = respiration)
+respiration2$graph
+cat('mRR: ', respiration2$mRR)
+cat('stdRR: ', respiration2$stdRR)
+cat('RMSSD: ', respiration2$RMSSD)
+```

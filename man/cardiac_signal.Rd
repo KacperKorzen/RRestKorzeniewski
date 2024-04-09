@@ -5,18 +5,18 @@
 \alias{cardiac_signal}
 \title{Synthetic PPG and ECG data}
 \format{
-A data frame with 2 columns.
+A data frame with 2 columns. First column is PPG signal,
+second is the ECG signal
 }
 \usage{
 data(cardiac_signal)
 }
 \description{
-The data set contains the synthetic PPG and ECG signals. First column is PPG signal
-second is the ECG signal.Sampling frequency of signal is 500 Hz
+The data set contains the synthetic PPG and ECG signals with sampling frequency 500 Hz.
 }
 \examples{
-data(cardaic_signal)
-plot(cardaic_signal$V1)
+data(cardiac_signal)
+plot(cardiac_signal$V1)
 }
 \keyword{ECG}
 \keyword{PPG}

@@ -19,10 +19,5 @@ loadPPG(file_name, path = "./", first_sample = 0, last_sample = 1000)
 A numeric vector contains the PPG signal
 }
 \description{
-Function to load photoplethysmographic (PPG) signal
-}
-\examples{
-loadPPG(file_name = 'ppg_signal.csv');
-loadPPG(file_name = 'ppg_signal.csv', first_sample=200, last_sample=5000);
-
+Function to load photoplethysmographic (PPG) signal.
 }
